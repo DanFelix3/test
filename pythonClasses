@@ -9,7 +9,7 @@ class Circle:
   def __init__(self,r):
     self.r = r
   def area(self):
-    return pi*float(self.r)**2
+    return m.pi*float(self.r)**2
 args = list(input().split())
 name = args[0]
 params = [x for x in args[1:]]
