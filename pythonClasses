@@ -1,0 +1,24 @@
+import math as m
+class Rectangle:
+  def __init__(self,l,b):
+    self.l = l
+    self.b = b
+  def area(self):
+    return self.l*self.b
+class Circle:
+  def __init__(self,r):
+    self.r = r
+  def area(self):
+    return pi*float(self.r)**2
+if __name__ == __main__:
+  args = list(input().split())
+  name = args[0]
+  params = [x for x in args[1:]]
+  if(name == 'rectangle'):
+    a = params[0]
+    b = params[1]
+    s = Rectangle(a,b)
+  else:
+    r = params[0]
+    s = Circle(r)
+  print("%.2f"%(s.area())
